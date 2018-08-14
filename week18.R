@@ -3,8 +3,8 @@ library(readxl)
 library(lubridate)
 #library(ggplot2)
 
-das <- read_excel('D:/My_Data/R/Courses/R Programming course/Dataset/week18_dallas_animals.xlsx',sheet = 1)
-
+#das <- read_excel('D:/My_Data/R/Courses/R Programming course/Dataset/week18_dallas_animals.xlsx',sheet = 1)
+das <- read_excel('week18_dallas_animals.xlsx',sheet = 1)
 
 das1 <- das %>% filter(!is.na(intake_type))%>%
   select(animal_id,intake_type,intake_date) %>% 
